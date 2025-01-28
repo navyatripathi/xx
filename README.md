@@ -59,19 +59,7 @@ Evaluation Metrics:
 
 DB Index and Silhouette Score were calculated to evaluate the quality of clustering.
 Precision, Recall, and F1-Score were used to evaluate the lookalike model recommendations.
-File Structure
-bash
-Copy
-Edit
-project/
-│
-├── FirstName_LastName_EDA.ipynb         # Notebook for Exploratory Data Analysis
-├── FirstName_LastName_Lookalike.ipynb   # Notebook for Lookalike Model
-├── FirstName_LastName_Clustering.ipynb  # Notebook for Customer Segmentation / Clustering
-├── FirstName_LastName_EDA.pdf           # Report for EDA
-├── FirstName_LastName_Lookalike.csv     # Lookalike Recommendations
-├── FirstName_LastName_Clustering.pdf    # Report for Clustering
-└── README.md                           # Project overview and instructions
+
 How to Run the Project
 1. Prerequisites
 Ensure you have the following Python packages installed:
@@ -85,17 +73,15 @@ scipy
 You can install the required packages by running:
 
 bash
-Copy
-Edit
 pip install pandas numpy matplotlib seaborn scikit-learn scipy
 2. Running the Notebooks
 Clone the repository or download the project folder.
-Open FirstName_LastName_EDA.ipynb in Jupyter or Google Colab and run each cell to perform the exploratory data analysis.
-Proceed with FirstName_LastName_Lookalike.ipynb to generate lookalike recommendations.
-Finally, run FirstName_LastName_Clustering.ipynb to perform customer segmentation and visualize the clusters.
+Open FEDA.ipynb in Jupyter or Google Colab and run each cell to perform the exploratory data analysis.
+Proceed with EDA.ipynb to generate lookalike recommendations.
+Finally, run NAVYA_TRIPATHU_Clustering.ipynb to perform customer segmentation and visualize the clusters.
 3. Output
-The final output of the clustering task is saved in FirstName_LastName_Clustering.pdf.
-Lookalike recommendations are saved in FirstName_LastName_Lookalike.csv.
+
+Lookalike recommendations are saved in NAVYA_TRIPATHI_Lookalike.csv.
 Results
 Clustering Task: The DBSCAN algorithm formed meaningful clusters based on customer transaction history, with an evaluation of clustering metrics (DB Index, Silhouette Score). Visualizations show the distribution of customers across clusters.
 Lookalike Task: The lookalike model successfully recommended the top 3 similar customers for each of the first 20 customers based on their purchase behavior.
